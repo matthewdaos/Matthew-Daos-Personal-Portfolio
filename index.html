@@ -50,6 +50,7 @@
                 <div id="socials-container">
                     <img src="./assets/linkedin.png" alt="Matthew Daos Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/matthew-daos/'">
                     <img src="./assets/instagram.png" alt="Matthew Daos Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/matthewdaos/'">
+                    <img src="./assets/github.png" alt="Matthew Daos GitHub Profile" class="icon" onclick="location.href='https://github.com/matthewdaos'">
                 </div>
             </div>
         </section>
@@ -169,14 +170,21 @@
             <p class="section__text__p1">Get in Touch</p>
             <h1 class="title">Contact Me</h1>
             <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img src="./assets/gmail.png" alt="gmail logo" class="icon contact-icon">
-                    <p><a href="mailto:matthewdaos@gmail.com">matthewdaos@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="linkedin logo" class="icon contact-icon">
-                    <p><a href="https://www.linkedin.com/in/matthew-daos/">LinkedIn</a></p>
-                </div>
+                <form action="https://formspree.io/f/xqkrvywz" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </section>
         <footer>
